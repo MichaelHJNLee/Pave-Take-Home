@@ -16,6 +16,7 @@ Written in JavaScript using React, Lodash, and the charting library Recharts.
 
 In the project directory, you can run:
 
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.\
