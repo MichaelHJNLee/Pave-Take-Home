@@ -11,7 +11,7 @@ const App = () => {
   const [company, setCompany] = useState(gamine);
   const [bonus, setBonus] = useState(false);
   const [city, setCity] = useState("Akron");
-  const [cityField, setCityField] = useState("country");
+  const [cityField, setCityField] = useState("department");
 
   const handleCheckbox = (e) => {
     let selection = e.target.value === "gamine" ? gamine : hookfish;
@@ -73,7 +73,8 @@ const App = () => {
               key === "firstName" ||
               key === "lastName" ||
               key === "salary" ||
-              key === "city"
+              key === "city" ||
+              key === "country"
             )
               return;
             return <option value={key}>{key}</option>;
