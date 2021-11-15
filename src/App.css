@@ -1,38 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
+  background-image: url('./pavebackground.svg');
+  color: #001b56;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navbar {
   display: flex;
-  flex-direction: column;
+  flex-flow: row;
+  top: 0;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-family: 'Gt america', sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: space-between;
+}
+
+.NavBarMain {
+  font-size: 2rem;
+  width: 70%;
+}
+
+.NavItemContainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  margin-right: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Section {
+  display: block;
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 0;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
