@@ -3,8 +3,9 @@ html {
 }
 
 .App {
+  font-family: "Gt america", sans-serif;
   text-align: center;
-  background-image: url('./pavebackground.svg');
+  background-image: url("./pavebackground.svg");
   color: #001b56;
   height: 100%;
 }
@@ -13,12 +14,9 @@ html {
   display: flex;
   flex-flow: row;
   top: 0;
-  padding-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding: 1.5rem 0;
   font-weight: bold;
-  font-family: 'Gt america', sans-serif;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 100px;
   justify-content: space-between;
 }
 
@@ -41,10 +39,19 @@ a {
   color: inherit;
 }
 
+select {
+  margin: 10px;
+}
+
+input {
+  margin: 10px;
+}
+
 .Section {
-  display: block;
+  display: flex;
+  flex-flow: column;
   position: relative;
-  height: auto;
+  height: 500px;
   width: 100%;
   margin: 0;
   align-items: center;
